@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    img {
+      margin-top: 0;
+      margin-left: auto;
+      margin-bottom: 0;
+      margin-right: auto;
+    }
+    th {
+      border: 0px;
+      text-align: center;
+      color: peachpuff;
+      font-size: 50px;
+    }
+    table {
+      position: fixed;
+      bottom: 50%;
+      right:0;
+    }
+    #logo {
+      position: fixed;
+      right: 47%;
+      bottom: 22%;
+    }
+  </style>
+  <title>UEFA | Euro Cup 2020 Countdown</title>
+</head>
+<body>
+  <video autoplay loop id="myVideo">
+    <source src="./videos/video1.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>HOURS</th>
+          <th></th>
+          <th>MINUTES</th>
+          <th></th>
+          <th>SECONDS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="hours"></th>
+          <th>:</th>
+          <th id="minutes"></th>
+          <th>:</th>
+          <th id="seconds"></th>
+        </tr>
+      </tbody>
+    </table>
+    <img src="./logo.png" alt="" width="200px" id="logo">
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
