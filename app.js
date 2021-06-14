@@ -1,5 +1,5 @@
 
-const targetDate = new Date('06-12-2021 00:30')
+const targetDate = new Date('06-18-2021 00:30')
 let prevSecond = 0;
 
 // let countdown = (targetDate - now) / 1000;
